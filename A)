@@ -1,2 +1,32 @@
 1-plantear una clase que carge dos valores entero y los comunique de forma escalada.
 
+#include <iostream.h>
+#include <string.h>
+class Persona
+	{
+	
+	private:
+	string Nombre;
+	int Edad;
+	
+	public:
+	void Inicio(){cout<<"Nombre:";
+				   cin>>Nombre;
+				   cout<<"Edad:";
+				   cin>>Edad;};
+	void MayorMenor(){
+	if(Edad>17){cout<<Nombre<<" es mayor"<<endl;}
+	else cout<<Nombre<<" es menor"<<endl;
+	                               }
+	};
+
+int main(int argc, char *argv[])
+{
+	Persona Zona;
+	Zona.Inicio();
+	Zona.MayorMenor();
+	
+	Persona Individuo;
+	Individuo.Inicio();
+	Individuo.MayorMenor();
+}
