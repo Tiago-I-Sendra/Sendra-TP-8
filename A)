@@ -6,14 +6,12 @@ class Persona
 	{
 	
 	private:
-	string Nombre;
-	int Edad;
+	int ClaveA;
+	int ClaveB;
 	
 	public:
-	void Inicio(){cout<<"Nombre:";
-				   cin>>Nombre;
-				   cout<<"Edad:";
-				   cin>>Edad;};
+	void Inicio(){cin>>ClaveA;
+                  cin>>ClaveB;};
 	void MayorMenor(){
 	if(Edad>17){cout<<Nombre<<" es mayor"<<endl;}
 	else cout<<Nombre<<" es menor"<<endl;
