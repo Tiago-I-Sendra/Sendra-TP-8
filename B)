@@ -11,9 +11,9 @@ class Persona
 	public:
 	void Inicio(){cin>>A;
                   cin>>B;} ;
-	void Escalada(){
-	while(A>B){cout<<A;A = A - 1;}
-    while(A<B){cout<<A;A = A + 1;}
+	void mayormenor(){
+	if(A>B){cout<<A<<endl;}
+    else if(A<B){cout<<B<<endl;}
 	                               }
 	};
 
@@ -21,5 +21,5 @@ int main(int argc, char *argv[])
 {
 	Persona Zona;
 	Zona.Inicio();
-	Zona.Escalada();
+	Zona.mayormenor();
 }
