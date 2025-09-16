@@ -1,0 +1,43 @@
+4-elaborar una clase que carge horqrios,salarios,trabajadores y aumentos de una empresa.
+#include <iostream.h>
+#include <string.h>
+class Cempleados
+	{
+	
+	private:
+	int A;
+	int B;
+	int C;
+
+    int I = 0;
+	public:
+	void Inicio(){cin>>A;
+                  cin>>B;
+                  cin>>C;};
+	void mayormenor(){
+	if(A>B){I = I+1;}
+    if(A>C){I = I+1;}
+    if(I==0){cout<<"A es el maximo"<<endl;}
+    if(I==3){cout<<"A es el minimo"<<endl;}
+
+    I = 0;
+
+    if(B>A){I = I+1;}
+    if(B>C){I = I+1;}
+    if(I==0){cout<<"B es el maximo"<<endl;}
+    if(I==3){cout<<"B es el minimo"<<endl;}
+
+    I = 0;
+
+    if(C>A){I = I+1;}
+    if(C>B){I = I+1;}
+    if(I==0){cout<<"C es el maximo"<<endl;}
+    if(I==3){cout<<"C es el minimo"<<endl;}
+	};
+
+int main(int argc, char *argv[])
+{
+	Persona Zona;
+	Zona.Inicio();
+	Zona.mayormenor();
+}
