@@ -1,0 +1,34 @@
+5-elaborar una clase que acepte N perfectos 
+
+#include <iostream.h>
+#include <string.h>
+class CNumeros
+	{
+	private:
+	int Numero;
+  int A;
+  int B = 0;
+
+	public:
+	void Divisor(){
+    cout<<su número:";
+    cin>>Numero;
+
+    for(int i = 1,i < Numero,i++)
+    {
+    A = Numero / i;
+
+    if(A == 0){B = B + i;}
+    }
+
+    if(B == Numero){cout<<"es un número perfecto"<<endl;}
+    else cout<<"no es un numero perfecto"<<endl;
+    };
+
+	};
+
+int main(int argc, char *argv[])
+{
+	Persona Zona;
+	Zona.Divisor();
+}
